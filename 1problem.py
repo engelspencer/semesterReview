@@ -1,6 +1,6 @@
 import math
 
-totaltime = input('Enter any number of seconds: ')
+totaltime = int(input('Enter any number of seconds: '))
 
 hours = int(totaltime/3600)
 totaltime = totaltime%3600
@@ -10,6 +10,6 @@ seconds = totaltime
 
 print(str(hours) + ':' + str(minutes) + ':' + str(seconds))
 
-a = input('Enter the edge length of a dodecahedron: ')
+a = float(input('Enter the edge length of a dodecahedron: '))
 area = 3 * math.sqrt(25 + (10 * math.sqrt(5))) * a * a
 print (str(area) + 'square units')
